@@ -21,7 +21,9 @@ public class TernaryOperator {
         // Bài tập vận dụng toán tử 3 ngôi
         System.out.print("Xin mời nhập vào điểm: ");
         double score = new Scanner(System.in).nextDouble();
-        String ketQuaDiem = (score >= 8 && score <= 10)?"Giỏi" : ((score >= 6.5 && score < 8)?"Khá" : ((score >= 5 && score < 6.5)?"Trung bình" : "Yếu"));
-        System.out.println(ketQuaDiem);
+        String ketQuaDiem = (score >= 8 && score <= 10)?"Giỏi" : 
+                ((score >= 6.5 && score < 8)?"Khá" : 
+                ((score >= 5 && score < 6.5)?"Trung bình" : "Yếu"));
+        System.out.println("Bạn xếp loại " + ketQuaDiem);
     }
 }
