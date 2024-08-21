@@ -20,3 +20,4 @@ public class DataTypeCoercion {
         // nên ép từ kiểu dữ liệu nhỏ sang lớn để tránh bị sai 
     }
 }
+
