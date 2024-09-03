@@ -38,5 +38,6 @@ public class ExerciseStringJava1 {
        System.out.printf("\nCó %s số in thường trong chuỗi",lowerCount);
        System.out.printf("\nCó %s khoảng trắng trong chuỗi\n",spaceCount);
         
+       
     }
 }

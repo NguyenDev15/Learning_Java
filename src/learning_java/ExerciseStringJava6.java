@@ -8,6 +8,7 @@ import java.util.Scanner;
  *
  * @author hnguynis.no1
  */
+
 public class ExerciseStringJava6 {
     public static void main(String[] args) {
         /*

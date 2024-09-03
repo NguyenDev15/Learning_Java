@@ -35,5 +35,6 @@ public class ExerciseStringJava2 {
          // xuất kết quả
          System.out.println("Tổng các số trong chuỗi = " + sum );
          System.out.println("Trung bình cộng = " + tbCong );
+         
     }
 }

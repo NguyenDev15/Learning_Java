@@ -53,7 +53,7 @@ public class ExerciseStringJava3 {
             
             
     }
-    
+   
     // hàm ktra tính hợp lệ của mật khẩu
     public static boolean checkPass(String password){
         // ktra độ dài
@@ -86,6 +86,7 @@ public class ExerciseStringJava3 {
         
         // Tổng hàm, nếu mk đầy đủ độ dài và chữ cái chữ số thì return true
         return true;
-                
+             
+        
     }
 }

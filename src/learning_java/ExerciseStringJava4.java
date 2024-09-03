@@ -20,7 +20,6 @@ public class ExerciseStringJava4 {
         System.out.println("Sau khi mã hóa: " + kq);
         
         
-        
     }
 
     // hàm chuyển đổi mã hóa

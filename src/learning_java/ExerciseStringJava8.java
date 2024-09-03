@@ -8,6 +8,7 @@ import java.util.Scanner;
  *
  * @author hnguynis.no1
  */
+
 public class ExerciseStringJava8 {
     public static void main(String[] args) {
         // Viết chương trình kiểm tra 1 chuỗi nhập vào từ bàn phím có phải Panlyndrome
