@@ -18,9 +18,15 @@ public class SinhVien {
     public sẽ truy xuất được ở tất cả
     */
     
+    
     // thuộc tính
     protected String hoTen;
     private double diem;
+    
+    
+  
+    
+    
     
     
     
@@ -33,7 +39,6 @@ public class SinhVien {
         diem = 10;
     }
     // constructor có đối số
-
     public SinhVien(String hoTen, double diem) {
         this.hoTen = hoTen;
         this.diem = diem;
@@ -42,12 +47,34 @@ public class SinhVien {
     
     
     
+    
+    
+    
+    
     // phương thức ( các hàm )
+    // phương thức không có kiểu trả về
     public void hienThiThongTin(){
         System.out.println(hoTen + " : " + diem);
     }
+    // phương thức có kiểu trả về
+    public double tinhDTB(double diemToan, double diemVan){
+        return (diemToan + diemVan) / 2;
+    }
+    // overloading methods
+     public double tinhDTB(double diemToan, double diemVan, double diemAnh){
+        return (diemToan + diemVan + diemAnh) / 3;
+    }
+    // parameters list
+     public double tongDiem(double ... arr){
+         double tong = 0.0;
+         for(double x : arr){
+             tong += x; 
+         }
+         return tong;
+     }
     
-    
+  
+     
     //getter and setter -> dùng khi mà có thể chỉnh sửa đối tượng đã private
     // sử dụng gián tiếp
     public double getDiem() {
@@ -67,6 +94,26 @@ public class SinhVien {
     }
     
     
+    // toString
+    @Override
+    public String toString() {
+        return "SinhVien{" + "hoTen= " + hoTen + ", diem= " + diem + '}';
+    }
+    
+    
+    // support methods and service methods
+    // 1. support methods chỉ sử dụng nội tại trong class
+    private boolean checkDiem(){
+        return this.diem >= 24;
+    }
+    // 2. service methods có thể gọi từ chương trình chính
+    public void checkHopLeDiem(){
+        if(checkDiem()){
+            System.out.println("Điểm hợp lệ, tiếp tục nhập thông tin");
+        }else{
+            System.out.println("Kiểm tra điểm đầu vào của sinh viên");
+        }
+    }
     
     
 }
